@@ -10,31 +10,12 @@ package Model;
  *
  * @author dhivazhr
  */
-public class Admin {
-    private String nama;
-    private String nip;
+public class Admin extends Orang{
     private String usernameAdmin;
     private String passAdmin;
     
     public Admin(String nama, String nip) {
-        this.nama = nama;
-        this.nip = nip;
-    }
-
-    public String getNama() {
-        return nama;
-    }
-
-    public void setNama(String nama) {
-        this.nama = nama;
-    }
-
-    public String getNip() {
-        return nip;
-    }
-
-    public void setNip(String nip) {
-        this.nip = nip;
+        super(nama,nip);
     }
 
     public String getUsernameAdmin() {
@@ -51,6 +32,11 @@ public class Admin {
 
     public void setPassAdmin(String passAdmin) {
         this.passAdmin = passAdmin;
+    }
+
+    @Override
+    public String display() {
+       return("Nama: "+getNama()+"\n"+"NIP: "+getNip());
     }
     
 }
