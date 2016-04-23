@@ -10,31 +10,12 @@ package Model;
  *
  * @author dhivazhr
  */
-public class KetuaKK {
-    private String nama;
-    private String nip;
+public class KetuaKK extends Orang{
     private String usernameKetuaKK;
     private String passKetuaKK;
 
     public KetuaKK(String nama, String nip) {
-        this.nama = nama;
-        this.nip = nip;
-    }
-
-    public String getNama() {
-        return nama;
-    }
-
-    public void setNama(String nama) {
-        this.nama = nama;
-    }
-
-    public String getNip() {
-        return nip;
-    }
-
-    public void setNip(String nip) {
-        this.nip = nip;
+        super(nama,nip);
     }
 
     public String getUsernameKetuaKK() {
@@ -51,6 +32,11 @@ public class KetuaKK {
 
     public void setPassKetuaKK(String passKetuaKK) {
         this.passKetuaKK = passKetuaKK;
+    }
+
+    @Override
+    public String display() {
+        return("Nama: "+getNama()+"\n"+"NIP: "+getNip());
     }
     
     
