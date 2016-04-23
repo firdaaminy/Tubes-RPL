@@ -11,23 +11,13 @@ package Model;
  * @author dhivazhr
  */
 public class Dekan extends Orang{
-    private String usernameDekan;
-    private String passDekan;
 
-    public Dekan(String nama, String nip) {
-        super(nama,nip);
+    public Dekan(String nama, String nip, String username, String password) {
+        super(nama, nip, username, password);
     }
-
-    public String getPassDekan() {
-        return passDekan;
-    }
-
-    public void setPassDekan(String passDekan) {
-        this.passDekan = passDekan;
-    }
-
+    
     @Override
-    public String display() {
-        return("Nama: "+getNama()+"\n"+"NIP: "+getNip());
+    public String getJabatan() {
+        return "Dekan";
     }
 }
