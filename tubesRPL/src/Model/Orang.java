@@ -13,10 +13,15 @@ package Model;
 public abstract class Orang {
     private String nama;
     private String nip;
+    private String username;
+    private String password;
+    private String jabatan;
 
-    public Orang(String nama, String nip){
+    public Orang(String nama, String nip, String username, String password){
         this.nama = nama;
         this.nip = nip;
+        this.username = username;
+        this.password = password;
     }
     
     public void setNama(String nama) {
@@ -31,5 +36,22 @@ public abstract class Orang {
     public String getNip() {
         return nip;
     }
-    public abstract String display();
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+    
+    public abstract String getJabatan();
 }

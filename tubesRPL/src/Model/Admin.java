@@ -11,32 +11,12 @@ package Model;
  * @author dhivazhr
  */
 public class Admin extends Orang{
-    private String usernameAdmin;
-    private String passAdmin;
-    
-    public Admin(String nama, String nip) {
-        super(nama,nip);
-    }
-
-    public String getUsernameAdmin() {
-        return usernameAdmin;
-    }
-
-    public void setUsernameAdmin(String usernameAdmin) {
-        this.usernameAdmin = usernameAdmin;
-    }
-
-    public String getPassAdmin() {
-        return passAdmin;
-    }
-
-    public void setPassAdmin(String passAdmin) {
-        this.passAdmin = passAdmin;
+    public Admin(String nama, String nip, String username, String password) {
+        super(nama, nip, username, password);
     }
 
     @Override
-    public String display() {
-       return("Nama: "+getNama()+"\n"+"NIP: "+getNip());
+    public String getJabatan() {
+        return "KeuanganFakultas";
     }
-    
 }
