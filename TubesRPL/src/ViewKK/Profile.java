@@ -3,18 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package View;
+
+package ViewKK;
 
 /**
  *
- * @author Iwan Ma'ruf
+ * @author dhivazhr
  */
-public class SignIn extends javax.swing.JPanel {
+public class Profile extends javax.swing.JPanel {
 
     /**
-     * Creates new form SignIn
+     * Creates new form Profile
      */
-    public SignIn() {
+    public Profile() {
         initComponents();
     }
 
@@ -26,8 +27,6 @@ public class SignIn extends javax.swing.JPanel {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-
-        setBackground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
