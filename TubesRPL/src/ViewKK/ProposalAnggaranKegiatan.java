@@ -6,6 +6,11 @@
 
 package ViewKK;
 
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JTextField;
+
 /**
  *
  * @author dhivazhr
@@ -31,23 +36,23 @@ public class ProposalAnggaranKegiatan extends javax.swing.JPanel {
         jSlider1 = new javax.swing.JSlider();
         jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
+        txFieldNamaKegiatan = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btnHome = new javax.swing.JButton();
         btnProfileKK = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnNotif = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txFieldJenisKegiatan = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox();
-        jComboBox2 = new javax.swing.JComboBox();
-        jComboBox3 = new javax.swing.JComboBox();
-        jTextField2 = new javax.swing.JTextField();
+        cbTanggalKegiatan = new javax.swing.JComboBox();
+        cbTahunKegiatan = new javax.swing.JComboBox();
+        cbBulanKegiatan = new javax.swing.JComboBox();
+        txFieldDescKegiatan = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
+        txFieldAnggaranKegiatan = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        btnSelesai = new javax.swing.JButton();
+        btnBatal = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(0, 0, 0));
 
@@ -64,10 +69,10 @@ public class ProposalAnggaranKegiatan extends javax.swing.JPanel {
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("PERAK");
 
-        jButton1.setText("jButton1");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnHome.setText("jButton1");
+        btnHome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnHomeActionPerformed(evt);
             }
         });
 
@@ -79,7 +84,7 @@ public class ProposalAnggaranKegiatan extends javax.swing.JPanel {
             }
         });
 
-        jButton2.setText("jButton2");
+        btnNotif.setText("jButton2");
 
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Jenis Kegiatan");
@@ -87,15 +92,15 @@ public class ProposalAnggaranKegiatan extends javax.swing.JPanel {
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Tanggal Kegiatan");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbTanggalKegiatan.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbTahunKegiatan.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbBulanKegiatan.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        txFieldDescKegiatan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                txFieldDescKegiatanActionPerformed(evt);
             }
         });
 
@@ -105,14 +110,14 @@ public class ProposalAnggaranKegiatan extends javax.swing.JPanel {
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Anggaran");
 
-        jButton3.setText("Selesai");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnSelesai.setText("Selesai");
+        btnSelesai.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnSelesaiActionPerformed(evt);
             }
         });
 
-        jButton4.setText("Batal");
+        btnBatal.setText("Batal");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -124,11 +129,11 @@ public class ProposalAnggaranKegiatan extends javax.swing.JPanel {
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnHome, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(btnNotif, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(0, 64, Short.MAX_VALUE)
                                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -145,20 +150,19 @@ public class ProposalAnggaranKegiatan extends javax.swing.JPanel {
                         .addGap(28, 28, 28)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton4)
+                                .addComponent(btnBatal)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 138, Short.MAX_VALUE)
-                                .addComponent(jButton3))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jTextField4)
-                                .addComponent(jTextField2)
-                                .addComponent(jTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, 260, Short.MAX_VALUE)
-                                .addComponent(jTextField1)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(45, 45, 45)
-                                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(btnSelesai))
+                            .addComponent(txFieldAnggaranKegiatan, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txFieldDescKegiatan, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txFieldNamaKegiatan, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 260, Short.MAX_VALUE)
+                            .addComponent(txFieldJenisKegiatan, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addComponent(cbTanggalKegiatan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(cbBulanKegiatan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(45, 45, 45)
+                                .addComponent(cbTahunKegiatan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -167,69 +171,204 @@ public class ProposalAnggaranKegiatan extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(13, 13, 13)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnHome, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnProfileKK, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnNotif, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(38, 38, 38)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(34, 34, 34)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txFieldNamaKegiatan, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txFieldJenisKegiatan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel5)
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(cbTanggalKegiatan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cbTahunKegiatan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cbBulanKegiatan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField2)
+                    .addComponent(txFieldDescKegiatan)
                     .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField4)
+                    .addComponent(txFieldAnggaranKegiatan)
                     .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(35, 35, 35)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3)
-                    .addComponent(jButton4))
+                    .addComponent(btnSelesai)
+                    .addComponent(btnBatal))
                 .addContainerGap(60, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnHomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHomeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnHomeActionPerformed
 
     private void btnProfileKKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProfileKKActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnProfileKKActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void txFieldDescKegiatanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txFieldDescKegiatanActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_txFieldDescKegiatanActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnSelesaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSelesaiActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btnSelesaiActionPerformed
 
+    //GETTER BUTTON
+    public JButton getBtnBatal() {
+        return btnBatal;
+    }
 
+    public JButton getBtnHome() {
+        return btnHome;
+    }
+
+    public JButton getBtnNotif() {
+        return btnNotif;
+    }
+
+    public JButton getBtnProfileKK() {
+        return btnProfileKK;
+    }
+
+    public JButton getBtnSelesai() {
+        return btnSelesai;
+    }
+
+    //SETTER&GETTER TEXT FIELD
+    public String getTxFieldAnggaranKegiatan() {
+        return txFieldAnggaranKegiatan.getText();
+    }
+
+    public void setTxFieldAnggaranKegiatan(String AnggaranKegiatan) {
+        txFieldAnggaranKegiatan.setText(AnggaranKegiatan);
+    }
+
+    public String getTxFieldDescKegiatan() {
+        return txFieldDescKegiatan.getText();
+    }
+
+    public void setTxFieldDescKegiatan(String DescKegiatan) {
+        txFieldDescKegiatan.setText(DescKegiatan);
+    }
+
+    public String getTxFieldJenisKegiatan() {
+        return txFieldJenisKegiatan.getText();
+    }
+
+    public void setTxFieldJenisKegiatan(String JenisKegiatan) {
+        txFieldJenisKegiatan.setText(JenisKegiatan);
+    }
+
+    public String getTxFieldNamaKegiatan() {
+        return txFieldNamaKegiatan.getText();
+    }
+
+    public void setTxFieldNamaKegiatan(String NamaKegiatan) {
+        txFieldNamaKegiatan.setText(NamaKegiatan);
+    }
+
+    //SETTER&GETTER COMBO BOX
+    public String getCbBulanKegiatan() {
+        return cbBulanKegiatan.getSelectedItem().toString();
+    }
+
+    public void setCbBulanKegiatan(String BulanKegiatan) {
+        cbBulanKegiatan.addItem("Januari");
+        cbBulanKegiatan.addItem("Februari");
+        cbBulanKegiatan.addItem("Maret");
+        cbBulanKegiatan.addItem("April");
+        cbBulanKegiatan.addItem("Mei");
+        cbBulanKegiatan.addItem("Juni");
+        cbBulanKegiatan.addItem("Juli");
+        cbBulanKegiatan.addItem("Agustus");
+        cbBulanKegiatan.addItem("September");
+        cbBulanKegiatan.addItem("Oktober");
+        cbBulanKegiatan.addItem("November");
+        cbBulanKegiatan.addItem("Desember");
+    }
+
+    public String getCbTahunKegiatan() {
+        return cbTahunKegiatan.getSelectedItem().toString();
+    }
+
+    public void setCbTahunKegiatan(String TahunKegiatan) {
+        cbTahunKegiatan.addItem("2015");
+        cbTahunKegiatan.addItem("2016");
+    }
+
+    public String getCbTanggalKegiatan() {
+        return cbTanggalKegiatan.getSelectedItem().toString();
+    }
+
+    public void setCbTanggalKegiatan(String TanggalKegiatan) {
+        cbTanggalKegiatan.addItem("1");
+        cbTanggalKegiatan.addItem("2");
+        cbTanggalKegiatan.addItem("3");
+        cbTanggalKegiatan.addItem("4");
+        cbTanggalKegiatan.addItem("5");
+        cbTanggalKegiatan.addItem("6");
+        cbTanggalKegiatan.addItem("7");
+        cbTanggalKegiatan.addItem("8");
+        cbTanggalKegiatan.addItem("9");
+        cbTanggalKegiatan.addItem("10");
+        cbTanggalKegiatan.addItem("11");
+        cbTanggalKegiatan.addItem("12");
+        cbTanggalKegiatan.addItem("13");
+        cbTanggalKegiatan.addItem("14");
+        cbTanggalKegiatan.addItem("15");
+        cbTanggalKegiatan.addItem("16");
+        cbTanggalKegiatan.addItem("17");
+        cbTanggalKegiatan.addItem("18");
+        cbTanggalKegiatan.addItem("19");
+        cbTanggalKegiatan.addItem("20");
+        cbTanggalKegiatan.addItem("21");
+        cbTanggalKegiatan.addItem("22");
+        cbTanggalKegiatan.addItem("23");
+        cbTanggalKegiatan.addItem("24");
+        cbTanggalKegiatan.addItem("25");
+        cbTanggalKegiatan.addItem("26");
+        cbTanggalKegiatan.addItem("27");
+        cbTanggalKegiatan.addItem("28");
+        cbTanggalKegiatan.addItem("29");
+        cbTanggalKegiatan.addItem("30");
+        cbTanggalKegiatan.addItem("31");
+    }
+    
+    public void addListener(ActionListener ae) {
+        btnBatal.addActionListener(ae);
+        btnHome.addActionListener(ae);
+        btnNotif.addActionListener(ae);
+        btnProfileKK.addActionListener(ae);
+        btnSelesai.addActionListener(ae);
+        cbBulanKegiatan.addActionListener(ae);
+        cbTahunKegiatan.addActionListener(ae);
+        cbTanggalKegiatan.addActionListener(ae);
+        txFieldAnggaranKegiatan.addActionListener(ae);
+        txFieldDescKegiatan.addActionListener(ae);
+        txFieldJenisKegiatan.addActionListener(ae);
+        txFieldNamaKegiatan.addActionListener(ae);
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBatal;
+    private javax.swing.JButton btnHome;
+    private javax.swing.JButton btnNotif;
     private javax.swing.JButton btnProfileKK;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JComboBox jComboBox1;
-    private javax.swing.JComboBox jComboBox2;
-    private javax.swing.JComboBox jComboBox3;
+    private javax.swing.JButton btnSelesai;
+    private javax.swing.JComboBox cbBulanKegiatan;
+    private javax.swing.JComboBox cbTahunKegiatan;
+    private javax.swing.JComboBox cbTanggalKegiatan;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -238,9 +377,9 @@ public class ProposalAnggaranKegiatan extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JSlider jSlider1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField txFieldAnggaranKegiatan;
+    private javax.swing.JTextField txFieldDescKegiatan;
+    private javax.swing.JTextField txFieldJenisKegiatan;
+    private javax.swing.JTextField txFieldNamaKegiatan;
     // End of variables declaration//GEN-END:variables
 }
