@@ -6,6 +6,7 @@
 
 package ViewKK;
 
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JTextField;
 
@@ -269,5 +270,11 @@ public class barangHabisPakai extends javax.swing.JPanel {
         this.txtNamaBarang = txtNamaBarang;
     }
 
-    
+    public void addListener (ActionListener ae){
+        btnBatal.addActionListener(ae);
+        btnMenu.addActionListener(ae);
+        btnNotif.addActionListener(ae);
+        btnProfileKK.addActionListener(ae);
+        btnSelesai.addActionListener(ae);
+    }
 }
