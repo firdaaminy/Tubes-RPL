@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package ViewKK;
+package View;
 
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -15,12 +15,12 @@ import javax.swing.JTextField;
  *
  * @author dhivazhr
  */
-public class ProposalAnggaranKegiatan extends javax.swing.JPanel {
+public class KKProposalAnggaranKegiatan extends javax.swing.JPanel {
 
     /**
      * Creates new form ProposalAnggaranKegiatan
      */
-    public ProposalAnggaranKegiatan() {
+    public KKProposalAnggaranKegiatan() {
         initComponents();
     }
 
