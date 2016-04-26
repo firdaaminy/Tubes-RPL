@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package ViewKK;
+package View;
 
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -13,12 +13,12 @@ import javax.swing.JButton;
  *
  * @author dhivazhr
  */
-public class HomeKK extends javax.swing.JFrame {
+public class KKHome extends javax.swing.JFrame {
 
     /**
      * Creates new form HomeKK
      */
-    public HomeKK() {
+    public KKHome() {
         initComponents();
     }
 

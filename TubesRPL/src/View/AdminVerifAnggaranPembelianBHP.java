@@ -4,22 +4,21 @@
  * and open the template in the editor.
  */
 
-package ViewKK;
+package View;
 
-import java.util.ArrayList;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
-import javax.swing.table.DefaultTableModel;
 
 /**
  *
  * @author dhivazhr
  */
-public class Verifikasi extends javax.swing.JPanel {
+public class AdminVerifAnggaranPembelianBHP extends javax.swing.JFrame {
 
     /**
-     * Creates new form Verifikasi
+     * Creates new form AnggaranPembelianBHPAdmin
      */
-    public Verifikasi() {
+    public AdminVerifAnggaranPembelianBHP() {
         initComponents();
     }
 
@@ -33,43 +32,43 @@ public class Verifikasi extends javax.swing.JPanel {
     private void initComponents() {
 
         jLabel7 = new javax.swing.JLabel();
-        btnProfileKK = new javax.swing.JButton();
+        btnProfileAdmin = new javax.swing.JButton();
         btnNotif = new javax.swing.JButton();
-        btnHome = new javax.swing.JButton();
+        btnHomeAdmin = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tabelVerifikasi = new javax.swing.JTable();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("PERAK");
 
-        btnProfileKK.setIcon(new javax.swing.ImageIcon("C:\\Users\\8.1\\Downloads\\people.png")); // NOI18N
-        btnProfileKK.setBorder(null);
-        btnProfileKK.addActionListener(new java.awt.event.ActionListener() {
+        btnProfileAdmin.setIcon(new javax.swing.ImageIcon("C:\\Users\\8.1\\Downloads\\people.png")); // NOI18N
+        btnProfileAdmin.setBorder(null);
+        btnProfileAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnProfileKKActionPerformed(evt);
+                btnProfileAdminActionPerformed(evt);
             }
         });
 
         btnNotif.setText("jButton2");
 
-        btnHome.setIcon(new javax.swing.ImageIcon("C:\\Users\\8.1\\Downloads\\bars.png")); // NOI18N
+        btnHomeAdmin.setIcon(new javax.swing.ImageIcon("C:\\Users\\8.1\\Downloads\\bars.png")); // NOI18N
 
         tabelVerifikasi.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "Jenis Proposal", "Nama Proposal", "Jumlah", "Verifikasi"
+                "Jenis Barang", "Nama Barang", "Keterangan", "Anggaran", "Verifikasi"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.Boolean.class
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.Boolean.class
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -78,19 +77,19 @@ public class Verifikasi extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tabelVerifikasi);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btnHome, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnHomeAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 323, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnNotif, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnProfileKK, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnProfileAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
                 .addGap(33, 33, 33)
@@ -102,52 +101,54 @@ public class Verifikasi extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnNotif, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnHome, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnProfileKK, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnHomeAdmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnProfileAdmin, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnNotif, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(1, 1, 1)
+                                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(37, 37, 37)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(279, 279, 279))
         );
+
+        pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnProfileKKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProfileKKActionPerformed
+    private void btnProfileAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProfileAdminActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnProfileKKActionPerformed
+    }//GEN-LAST:event_btnProfileAdminActionPerformed
 
-    //GETTER BUTTON
-    public JButton getBtnHome() {
-        return btnHome;
+    /**
+     * @param args the command line arguments
+     */
+     public void addListener(ActionListener ae) {
+        btnHomeAdmin.addActionListener(ae);
+        btnNotif.addActionListener(ae);
+        btnProfileAdmin.addActionListener(ae);
+    }
+
+    public JButton getBtnHomeAdmin() {
+        return btnHomeAdmin;
     }
 
     public JButton getBtnNotif() {
         return btnNotif;
     }
 
-    public JButton getBtnProfileKK() {
-        return btnProfileKK;
+    public JButton getBtnProfileAdmin() {
+        return btnProfileAdmin;
     }
+     
+     
 
-    public void setHeader() {
-        String[] header = {"Jenis Proposal","Nama Proposal","Jumlah","Verifikasi"};
-        DefaultTableModel model = new DefaultTableModel(null, header);
-        tabelVerifikasi.setModel(model);
-    }
-    
-    public void inputData(ArrayList<Kelas> listKelas) {
-        DefaultTableModel model = (DefaultTableModel) tabelVerifikasi.getModel();
-        
-    }
-   
-    
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnHome;
+    private javax.swing.JButton btnHomeAdmin;
     private javax.swing.JButton btnNotif;
-    private javax.swing.JButton btnProfileKK;
+    private javax.swing.JButton btnProfileAdmin;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tabelVerifikasi;
