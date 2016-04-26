@@ -6,6 +6,9 @@
 
 package ViewAdmin;
 
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+
 /**
  *
  * @author dhivazhr
@@ -186,4 +189,55 @@ public class HomeAdmin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
+
+    public JButton getBtnKeuanganBulanan() {
+        return btnKeuanganBulanan;
+    }
+
+    public void setBtnKeuanganBulanan(JButton btnKeuanganBulanan) {
+        this.btnKeuanganBulanan = btnKeuanganBulanan;
+    }
+
+    public JButton getBtnProfileAdmin() {
+        return btnProfileAdmin;
+    }
+
+    public void setBtnProfileAdmin(JButton btnProfileAdmin) {
+        this.btnProfileAdmin = btnProfileAdmin;
+    }
+
+    public JButton getBtnTutupBuku() {
+        return btnTutupBuku;
+    }
+
+    public void setBtnTutupBuku(JButton btnTutupBuku) {
+        this.btnTutupBuku = btnTutupBuku;
+    }
+
+    public JButton getBtnVerifikasiKegiatan() {
+        return btnVerifikasiKegiatan;
+    }
+
+    public void setBtnVerifikasiKegiatan(JButton btnVerifikasiKegiatan) {
+        this.btnVerifikasiKegiatan = btnVerifikasiKegiatan;
+    }
+
+    public JButton getBtnVerifikasiPBHP() {
+        return btnVerifikasiPBHP;
+    }
+
+    public void setBtnVerifikasiPBHP(JButton btnVerifikasiPBHP) {
+        this.btnVerifikasiPBHP = btnVerifikasiPBHP;
+    }
+
+    public void addListener(ActionListener ae){
+        btnKeuanganBulanan.addActionListener(ae);
+        btnKeuanganMingguan.addActionListener(ae);
+        btnProfileAdmin.addActionListener(ae);
+        btnTutupBuku.addActionListener(ae);
+        btnVerifikasiKegiatan.addActionListener(ae);
+        btnVerifikasiPBHP.addActionListener(ae);
+        btnVerifikasiTutupBuku.addActionListener(ae);
+    }
+    
 }

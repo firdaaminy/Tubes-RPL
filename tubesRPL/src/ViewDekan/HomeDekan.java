@@ -5,7 +5,9 @@
  */
 package ViewDekan;
 
+import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
+import javax.swing.JButton;
 
 /**
  *
@@ -37,11 +39,11 @@ public class HomeDekan extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        jButton1 = new javax.swing.JButton();
+        btnLaporanKeuangan = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        btnLaporanTutupBuku = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        btnVerifikasi = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
 
         jMenu1.setText("jMenu1");
@@ -98,17 +100,17 @@ public class HomeDekan extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("PERAK");
 
-        jButton1.setText("jButton1");
+        btnLaporanKeuangan.setText("jButton1");
 
         jLabel2.setForeground(new java.awt.Color(204, 204, 204));
         jLabel2.setText("Laporan Keuangan");
 
-        jButton2.setText("jButton2");
+        btnLaporanTutupBuku.setText("jButton2");
 
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Laporan Tutup Buku");
 
-        jButton3.setText("jButton3");
+        btnVerifikasi.setText("jButton3");
 
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Verifikasi");
@@ -125,15 +127,15 @@ public class HomeDekan extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnLaporanTutupBuku, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnLaporanKeuangan, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnVerifikasi, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addGap(0, 75, Short.MAX_VALUE)))
@@ -148,15 +150,15 @@ public class HomeDekan extends javax.swing.JFrame {
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE)
+                    .addComponent(btnLaporanKeuangan, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(46, 46, 46)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnLaporanTutupBuku, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(58, 58, 58)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnVerifikasi, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(191, Short.MAX_VALUE))
         );
@@ -236,9 +238,9 @@ public class HomeDekan extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton btnLaporanKeuangan;
+    private javax.swing.JButton btnLaporanTutupBuku;
+    private javax.swing.JButton btnVerifikasi;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -254,5 +256,35 @@ public class HomeDekan extends javax.swing.JFrame {
 
     private void showPopupMenu (MouseEvent e){
         jPopupMenu1.show(this, e.getX(), e.getY());
+    }
+
+    public JButton getBtnLaporanKeuanga() {
+        return btnLaporanKeuangan;
+    }
+
+    public void setBtnLaporanKeuanga(JButton btnLaporanKeuanga) {
+        this.btnLaporanKeuangan = btnLaporanKeuanga;
+    }
+
+    public JButton getBtnLaporanTutupBuku() {
+        return btnLaporanTutupBuku;
+    }
+
+    public void setBtnLaporanTutupBuku(JButton btnLaporanTutupBuku) {
+        this.btnLaporanTutupBuku = btnLaporanTutupBuku;
+    }
+
+    public JButton getBtnVerifikasi() {
+        return btnVerifikasi;
+    }
+
+    public void setBtnVerifikasi(JButton btnVerifikasi) {
+        this.btnVerifikasi = btnVerifikasi;
+    }
+    
+    public void addListener (ActionListener ae){
+        btnLaporanKeuangan.addActionListener(ae);
+        btnLaporanTutupBuku.addActionListener(ae);
+        btnVerifikasi.addActionListener(ae);
     }
 }

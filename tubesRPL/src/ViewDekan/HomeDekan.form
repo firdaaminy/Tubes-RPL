@@ -129,17 +129,17 @@
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Component id="jButton2" min="-2" pref="35" max="-2" attributes="0"/>
+                                  <Component id="btnLaporanTutupBuku" min="-2" pref="35" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jLabel3" max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
-                                  <Component id="jButton1" min="-2" pref="35" max="-2" attributes="0"/>
+                                  <Component id="btnLaporanKeuangan" min="-2" pref="35" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jLabel2" min="-2" pref="142" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jButton3" min="-2" pref="35" max="-2" attributes="0"/>
+                                  <Component id="btnVerifikasi" min="-2" pref="35" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jLabel4" max="32767" attributes="0"/>
                               </Group>
@@ -160,17 +160,17 @@
                   <Component id="jSeparator1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="jButton1" pref="35" max="32767" attributes="0"/>
+                      <Component id="btnLaporanKeuangan" pref="35" max="32767" attributes="0"/>
                       <Component id="jLabel2" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jButton2" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                      <Component id="btnLaporanTutupBuku" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
                       <Component id="jLabel3" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jButton3" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                      <Component id="btnVerifikasi" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
                       <Component id="jLabel4" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="191" max="32767" attributes="0"/>
@@ -193,7 +193,7 @@
         </Component>
         <Component class="javax.swing.JSeparator" name="jSeparator1">
         </Component>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="javax.swing.JButton" name="btnLaporanKeuangan">
           <Properties>
             <Property name="text" type="java.lang.String" value="jButton1"/>
           </Properties>
@@ -206,7 +206,7 @@
             <Property name="text" type="java.lang.String" value="Laporan Keuangan"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton2">
+        <Component class="javax.swing.JButton" name="btnLaporanTutupBuku">
           <Properties>
             <Property name="text" type="java.lang.String" value="jButton2"/>
           </Properties>
@@ -219,7 +219,7 @@
             <Property name="text" type="java.lang.String" value="Laporan Tutup Buku"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton3">
+        <Component class="javax.swing.JButton" name="btnVerifikasi">
           <Properties>
             <Property name="text" type="java.lang.String" value="jButton3"/>
           </Properties>
