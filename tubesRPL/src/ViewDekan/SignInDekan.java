@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package View;
+package ViewDekan;
 
 /**
  *
  * @author Iwan Ma'ruf
  */
-public class SignIn extends javax.swing.JPanel {
+public class SignInDekan extends javax.swing.JPanel {
 
     /**
      * Creates new form SignIn
      */
-    public SignIn() {
+    public SignInDekan() {
         initComponents();
     }
 
