@@ -43,9 +43,9 @@
                                       <EmptySpace max="32767" attributes="0"/>
                                       <Component id="btnSelesai" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="txtJumlahBarang" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="txtNamaBarang" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="txtJenisBarang" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="txFieldJumlahBarang" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txFieldNamaBarang" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txFieldJenisBarang" alignment="1" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
                           </Group>
@@ -56,7 +56,7 @@
                       </Group>
                   </Group>
                   <Group type="102" attributes="0">
-                      <Component id="btnMenu" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="btnHome" min="-2" pref="34" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel7" min="-2" pref="75" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
@@ -79,7 +79,7 @@
                       <Component id="btnProfileKK" alignment="1" max="32767" attributes="0"/>
                       <Component id="btnNotif" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="btnMenu" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="btnHome" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="11" max="32767" attributes="0"/>
               <Component id="jLabel1" min="-2" pref="45" max="-2" attributes="0"/>
@@ -88,7 +88,7 @@
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtJenisBarang" alignment="3" max="32767" attributes="0"/>
+                          <Component id="txFieldJenisBarang" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="0" pref="6" max="32767" attributes="0"/>
                   </Group>
@@ -97,12 +97,12 @@
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtNamaBarang" min="-2" max="-2" attributes="0"/>
+                  <Component id="txFieldNamaBarang" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtJumlahBarang" min="-2" max="-2" attributes="0"/>
+                  <Component id="txFieldJumlahBarang" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -132,7 +132,7 @@
         <Property name="text" type="java.lang.String" value="Laporan Pembelian Barang Habis Pakai"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtJenisBarang">
+    <Component class="javax.swing.JTextField" name="txFieldJenisBarang">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
@@ -157,7 +157,7 @@
         <Property name="text" type="java.lang.String" value="Nama Barang"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtNamaBarang">
+    <Component class="javax.swing.JTextField" name="txFieldNamaBarang">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
@@ -168,7 +168,7 @@
         <Property name="text" type="java.lang.String" value="Jumlah Barang"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtJumlahBarang">
+    <Component class="javax.swing.JTextField" name="txFieldJumlahBarang">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
@@ -203,18 +203,24 @@
         <Property name="text" type="java.lang.String" value="PERAK"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="btnMenu">
+    <Component class="javax.swing.JButton" name="btnHome">
       <Properties>
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMenuActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnHomeActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnNotif">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jButton2"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnProfileKK">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="2" name="C:\Users\8.1\Downloads\people.png"/>
+        </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="null"/>
         </Property>
