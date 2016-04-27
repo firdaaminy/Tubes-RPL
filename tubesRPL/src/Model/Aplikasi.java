@@ -135,4 +135,13 @@ public class Aplikasi {
         }
         return null;
     }
+    
+    public void loadData(){
+        listAdmin.add(new Admin("Jonny", "ADM001", "admin", "admin"));
+        
+        listDekan.add(new Dekan("Budi","DKN001","dekan","dekan"));
+        
+        listKetuaKK.add(new KetuaKK("Ina", "KKK001","ketuakk", "ketuakk"));
+    }
+    
 }
