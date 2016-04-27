@@ -140,7 +140,6 @@ public class KKVerifikasi extends javax.swing.JPanel {
     
     public void inputData(ArrayList<Kelas> listKelas) {
         DefaultTableModel model = (DefaultTableModel) tabelVerifikasi.getModel();
-        
     }
    
     
