@@ -13,14 +13,14 @@ import java.awt.event.ActionListener;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
-public class SignIn extends javax.swing.JPanel {
+public class SignIn extends javax.swing.JFrame{
 
     /**
      * Creates new form SignIn
      */
     public SignIn() {
         initComponents();
-        
+        setLocationRelativeTo(null);
     }
 
     /**

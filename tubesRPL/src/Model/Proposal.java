@@ -5,13 +5,14 @@
  */
 package Model;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  *
  * @author User
  */
-public class Proposal {
+public class Proposal implements Serializable{
     private int noProposal;
     private long anggaran;
     private String jenis;

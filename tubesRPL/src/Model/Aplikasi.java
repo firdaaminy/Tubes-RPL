@@ -20,13 +20,14 @@ import java.util.logging.Logger;
  */
 public class Aplikasi {
 
-    ArrayList<KetuaKK> listKetuaKK = new ArrayList();
-    ArrayList<Admin> listAdmin = new ArrayList();
-    ArrayList<Dekan> listDekan = new ArrayList();
-    FileIO save;
+    private ArrayList<KetuaKK> listKetuaKK = new ArrayList();
+    private ArrayList<Admin> listAdmin = new ArrayList();
+    private ArrayList<Dekan> listDekan = new ArrayList();
+    private FileIO save;
 
     public Aplikasi() {
         save = new FileIO();
+        
     }
 
     public void loadKetuaKK() throws IOException {
@@ -36,7 +37,7 @@ public class Aplikasi {
             File f = new File("DataKetuaKK.txt");
             f.createNewFile();
         } catch (EOFException ex) {
-            listKetuaKK = new ArrayList<>();
+            listKetuaKK = new ArrayList();
         } catch (IOException | ClassNotFoundException ex) {
             throw new IOException("error " + ex.getMessage());
         }
@@ -49,7 +50,7 @@ public class Aplikasi {
             File f = new File("DataAdmin.txt");
             f.createNewFile();
         } catch (EOFException e) {
-            listAdmin = new ArrayList<>();
+            listAdmin = new ArrayList();
         } catch (IOException | ClassNotFoundException ex) {
             throw new IOException("error " + ex.getMessage());
         }
@@ -62,7 +63,7 @@ public class Aplikasi {
             File f = new File("DataDekan.txt");
             f.createNewFile();
         } catch (EOFException ex) {
-            listAdmin = new ArrayList<>();
+            listAdmin = new ArrayList();
         } catch (ClassNotFoundException | IOException ex) {
 
             throw new IOException("error " + ex.getMessage());
@@ -80,23 +81,23 @@ public class Aplikasi {
         }
     }
 
-    public void saveAdmin() throws FileNotFoundException, IOException {
+    public void saveAdmin()  {
         try {
             save.saveObject(listAdmin, "DataAdmin.txt");
         } catch (FileNotFoundException e) {
-            throw new FileNotFoundException("file not found");
+            e.printStackTrace();
         } catch (IOException e) {
-            throw new IOException("error " + e.getMessage());
+            e.printStackTrace();
         }
     }
 
-    public void saveDekan() throws IOException{
+    public void saveDekan() throws FileNotFoundException, IOException{
         try {
             save.saveObject(listDekan, "DataDekan.txt");
         } catch (FileNotFoundException e) {
             throw new FileNotFoundException("file not found");
-        }catch(IOException e){
-            throw new IOException("error " + e.getMessage());
+        } catch (IOException ex){
+            System.out.println("error " + ex.getMessage());
         }
         
     }
@@ -135,4 +136,16 @@ public class Aplikasi {
         }
         return null;
     }
-}
+    
+    public void loadData(){
+        listAdmin.add(new Admin("Musdalifah","ADM00001", "admin1", "admin1"));
+        listAdmin.add(new Admin("Roma Irama","ADM00002", "admin2", "admin2"));
+        
+        listDekan.add(new Dekan("Bapak Dekan","DKN00001","dekan1", "dekan1"));
+        
+        listKetuaKK.add(new KetuaKK("Ketua KK S1 Informatika","KKK00001", "kk1", "kk1"));
+    }
+    
+}   
+
+    

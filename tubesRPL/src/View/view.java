@@ -3,15 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package View;
 
-package Model;
-
-import java.io.Serializable;
+import java.awt.event.ActionListener;
 
 /**
  *
- * @author dhivazhr
+ * @author User
  */
-public class ProposalBarangHabisPakai implements Serializable{
-    
+public interface view {
+    public void addListener(ActionListener e);
 }

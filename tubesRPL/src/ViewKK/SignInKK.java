@@ -9,7 +9,6 @@ package ViewKK;
  *
  * @author Iwan Ma'ruf
  */
-import ViewAdmin.*;
 import java.awt.event.ActionListener;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;

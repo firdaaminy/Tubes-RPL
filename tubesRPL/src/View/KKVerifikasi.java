@@ -138,10 +138,10 @@ public class KKVerifikasi extends javax.swing.JPanel {
         tabelVerifikasi.setModel(model);
     }
     
-    public void inputData(ArrayList<Kelas> listKelas) {
-        DefaultTableModel model = (DefaultTableModel) tabelVerifikasi.getModel();
-        
-    }
+//    public void inputData(ArrayList<Kelas> listKelas) {
+//        DefaultTableModel model = (DefaultTableModel) tabelVerifikasi.getModel();
+//        
+//    }
    
     
     // Variables declaration - do not modify//GEN-BEGIN:variables

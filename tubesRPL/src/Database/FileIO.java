@@ -27,8 +27,7 @@ public class FileIO {
         out.close();
     }
 
-    public Object getObject(String file)
-            throws FileNotFoundException, IOException,
+    public Object getObject(String file)throws FileNotFoundException, IOException,
             ClassNotFoundException, EOFException {
 
         ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file));

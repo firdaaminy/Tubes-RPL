@@ -6,11 +6,13 @@
 
 package Model;
 
+import java.io.Serializable;
+
 /**
  *
  * @author dhivazhr
  */
-public class ProposalKegiatan {
+public class ProposalKegiatan implements Serializable{
     private String namaProposal;
     private String jenisProposal;
     private int jumlah;

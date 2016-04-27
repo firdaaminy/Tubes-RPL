@@ -5,11 +5,13 @@
  */
 package Model;
 
+import java.io.Serializable;
+
 /**
  *
  * @author User
  */
-public class Dekan extends Orang{
+public class Dekan extends Orang implements Serializable{
 
     public Dekan(String nama, String nip, String username, String password) {
         super(nama, nip, username, password);
