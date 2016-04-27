@@ -22,7 +22,7 @@ public class KetuaKK extends Orang{
     }
     
     public void createProposal(int noProposal, long anggaran, String jenis, String keterangan, boolean verifikasi, Date date){
-        listProposal.add(new Proposal(int noProposal, long anggaran, String jenis, String keterangan, boolean verifikasi, Date date));
+       // listProposal.add(new Proposal(int noProposal, long anggaran, String jenis, String keterangan, boolean verifikasi, Date date));
     }
     
    @Override
