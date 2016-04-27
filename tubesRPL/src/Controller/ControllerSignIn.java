@@ -45,25 +45,29 @@ public class ControllerSignIn implements ActionListener {
         Object source = e.getSource();
         if (source.equals(view.getBtnSignIn())) {
             if (view.getUsernameAdmin() != null && view.getPassword() != null) {
-                Orang org = (Orang) app.login(view.getUsernameAdmin(), view.getPassword());
-                if (org != null) {
-                    if (org.getJabatan().equals("KeuanganFakultas")) {
-                        Admin a = (Admin) org;
-                        ControllerHomeAdmin homeadmin = new ControllerHomeAdmin();
-                        view.setVisible(false);
-                    } else if (org.getJabatan().equals("KetuaKK")) {
-                        KetuaKK kk = (KetuaKK) org;
-                        
-                        ControllerHomeKK homekk = new ControllerHomeKK();
-                        view.setVisible(false);
-                        
-                    } else if (org.getJabatan().equals("Dekan")) {
-                        Dekan dekan = (Dekan) org;
-                        ControllerHomeDekan homedekan = new ControllerHomeDekan();
-                        view.setVisible(false);
+                try {
+                    Orang org = (Orang) app.login(view.getUsernameAdmin(), view.getPassword());
+                    if (org != null) {
+                        if (org.getJabatan().equals("KeuanganFakultas")) {
+                            Admin a = (Admin) org;
+                            ControllerHomeAdmin homeadmin = new ControllerHomeAdmin();
+                            view.setVisible(false);
+                        } else if (org.getJabatan().equals("KetuaKK")) {
+                            KetuaKK kk = (KetuaKK) org;
+                            
+                            ControllerHomeKK homekk = new ControllerHomeKK();
+                            view.setVisible(false);
+                            
+                        } else if (org.getJabatan().equals("Dekan")) {
+                            Dekan dekan = (Dekan) org;
+                            ControllerHomeDekan homedekan = new ControllerHomeDekan();
+                            view.setVisible(false);
+                        }
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Not Registered");
                     }
-                } else {
-                    JOptionPane.showMessageDialog(null, "Not Registered");
+                } catch (IOException ex) {
+                    JOptionPane.showMessageDialog(null, "Can't Login");
                 }
             } else {
                 JOptionPane.showMessageDialog(null, "Form kosong");
