@@ -6,16 +6,25 @@
 
 package Model;
 
+import java.util.ArrayList;
+import java.util.Date;
+
 /**
  *
  * @author dhivazhr
  */
 public class KetuaKK extends Orang{
-
+        
+    private ArrayList<Proposal> listProposal = new ArrayList();
+    
     public KetuaKK(String nama, String nip, String username, String password) {
         super(nama, nip, username, password);
     }
-
+    
+    public void createProposal(int noProposal, long anggaran, String jenis, String keterangan, boolean verifikasi, Date date){
+       // listProposal.add(new Proposal(int noProposal, long anggaran, String jenis, String keterangan, boolean verifikasi, Date date));
+    }
+    
    @Override
     public String getJabatan() {
         return "KetuaKK";
